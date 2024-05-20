@@ -1,0 +1,274 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1em;
+    position: relative;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li.dropdown:hover .dropdown-menu {
+    display: block; /* Show the dropdown menu on hover */
+}
+
+.dropdown-menu {
+    display: none; /* Hide the dropdown menu by default */
+    position: absolute;
+    top: 100%; /* Position the dropdown menu below the parent list item */
+    left: 0;
+    background-color: rgb(255, 255, 255); /* Background color of the dropdown menu */
+    padding: 2em 0; /* Increase padding */
+    border: 1px solid #432f2f; /* Border of the dropdown menu */
+    z-index: 1000;
+    border-radius: 8px;
+}
+
+.dropdown-menu li {
+    white-space: nowrap; /* Prevent item from wrapping to the next line */
+    padding: 0.5em 1em; /* Adjust padding */
+    font-size: 0.8em; /* Adjust font size */
+    margin-bottom: 0.5em; /* Add margin between items */
+}
+
+.dropdown-menu li:hover {
+    background-color: #ff484881; /* Background color of the dropdown menu item on hover */
+    border-radius: 8px;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #333; /* Text color of the dropdown menu item */
+    font-weight: bold;
+}
+
+.hero {
+    background: url('Banner.jfif') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    animation: slideInOut 5s infinite;
+}
+
+@keyframes slideInOut {
+    0% {
+        transform: translateX(-100%); /* Start position: fully to the left */
+    }
+    20% {
+        transform: translateX(0); /* Pause position: centered */
+    }
+    80% {
+        transform: translateX(0); /* Pause position: centered */
+    }
+    100% {
+        transform: translateX(100%); /* End position: fully to the right */
+    }
+}
+
+section {
+    padding: 2em;
+    width: 100%;
+    box-sizing: border-box; /* Include padding in the width */
+    margin: auto;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    /* Header styles remain the same */
+
+    /* Dropdown menu styles remain the same */
+
+    /* Hero background image styles remain the same */
+
+    /* Section styles */
+    section {
+        padding: 1em; /* Decrease padding for smaller screens */
+    }
+
+    /* Make text, image, and video top to bottom */
+    .about-content {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    /* Adjust spacing between text and image */
+    .aboutDescription {
+        margin-bottom: 1em; /* Add margin between text and image */
+    }
+
+    /* Adjust image size */
+    .aboutDp img {
+        max-width: 100%; /* Ensure image fits container width */
+    }
+
+    /* Adjust video size */
+    section video {
+        max-width: 100%; /* Ensure video fits container width */
+    }
+
+    .ArduinoProject,
+    .DustProject,
+    .ObjectProject,
+    .TicTacToeProject,
+    #projects .content {
+        display: flex;
+        flex-direction: column;
+        padding: 1em; /* Decrease padding for smaller screens */
+    }
+
+    .ArduinoProject,
+    .DustProject,
+    .ObjectProject,
+    .TicTacToeProject .description {
+        margin-bottom: 1em; /* Add margin between description and image */
+    }
+
+    .ArduinoProject video,
+    .DustProject video,
+    .ObjectProject video {
+        width: 100%; /* Ensure video fills its container */
+        max-width: none; /* Remove max-width */
+    }
+}
+
+/* Make text responsive */
+section p, section h2, section ul {
+    font-size: 1em; /* Base font size */
+    margin-bottom: 1em; /* Add spacing between elements */
+}
+
+/* Make images responsive */
+section img, section video {
+    max-width: 100%; /* Ensure images and videos don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Adjust specific elements as needed */
+section h3 {
+    font-size: 1.5em; /* Larger font size for headings */
+}
+
+section video {
+    margin-top: 1em; /* Add spacing between text and video */
+}
+
+#about, #projects, #contact {
+    background-color: #f4f4f4;
+    margin: 2em 0;
+    padding: 2em;
+    border-radius: 8px;
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start; /* Align items at the start of the cross axis */
+    flex-wrap: wrap;
+}
+
+.aboutDescription {
+    flex: 1; /* Occupy available space */
+    text-align: center;
+    padding: 1em; /* Add spacing between description and image */
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.aboutDp {
+    flex: 1; /* Occupy available space */
+    text-align: center;
+}
+
+.aboutDp img {
+    max-width: 70%; /* Adjust the maximum width of the image */
+    height: auto;
+    border-radius: 8px;
+}
+
+.ArduinoProject, .DustProject, .ObjectProject, .TicTacToeProject {
+    margin-bottom: 1em;
+    color: white; /* Ensures the text is readable on the background image */
+    padding: 2em;
+    border-radius: 8px;
+    position: relative;
+}
+
+.ArduinoProject {
+    background: url('SolarRobot.png') no-repeat center center/cover;
+}
+
+.DustProject {
+    background: url('uncleaned solar panel.jpg') no-repeat center center/cover;
+}
+
+.ObjectProject {
+    background: url('App Image.jpeg') no-repeat center center/cover;
+}
+
+.TicTacToeProject {
+    background: url('HomeTicTacToe.jpeg') no-repeat center center/cover;
+}
+
+#projects .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+#projects .description {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 1em;
+    border-radius: 4px;
+}
+
+#projects .video {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ArduinoProject video, .DustProject video, .ObjectProject video {
+    width: 90%;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.DustProject video, .ObjectProject video {
+    flex: 1;
+    width: 50%;
+    max-width: 70%;
+    border-radius: 8px;
+}
+
+#contact {
+    margin-bottom: 6em; /* Adjust the value as needed */
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

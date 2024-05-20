@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">Projects
+                    <ul class="dropdown-menu">
+                        <li><a href="#Arduino">Floor Cleaning Robot </a></li>
+                        <li><a href="#Dust">Dust Detection Model</a></li>
+                        <li><a href="#Object">Object Detection Application</a></li>
+                        <li><a href="#TicTacToe">TicTacToe</a></li>
+                        <!-- Add more project links as needed -->
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Discover my work and projects.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="aboutDp">
+                <img src="Dp1.png" alt="Developer's Image">
+            </div>
+            <div class="aboutDescription">
+                <p>As an ambitious undergraduate, I possess a robust skill set in programming, app development, and full-stack 2D game development. Renowned for my adept problem-solving abilities and innovative mindset, I am primed to offer a fresh perspective and technical expertise to collaborative projects. Currently pursuing a B.Tech in CSIT with a track record of consistent academic excellence, I am poised to tackle new challenges and seize opportunities with confidence and proficiency.</p>
+            </div>
+            <div class="aboutDescription">
+                <p>Name : Bisheshwar Dev Sharma</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div id="Arduino" class="ArduinoProject">
+            <h3>Floor Cleaning Robot</h3>
+            <div class="content">
+                <div class="description">
+                    <p>A cleaning robot built by a group of 5 undergraduate students of UEM, was a basic
+                        Bluetooth-controlled Arduino car with a cleaning brush attached at the end.</p>
+                    <p>The skills developed:</p>
+                    <ul>
+                        <li>Arduino Mega</li>
+                        <li>C++</li>
+                    </ul>
+                </div>
+                <div class="video">
+                    <video controls>
+                        <source src="CleaningRobot.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="Dust" class="DustProject">
+            <h3>Dust Detection Model</h3>
+            <div class="content">
+                <div class="description">
+                    <p>A group project where an AI model was trained to detected dust, leaves and bird-droppings using
+                        RoboFlow, Yolo and Google Colab. A good accuracy was achieved. This model can be utilized for
+                        further research and development.</p>
+                    <p>The skills developed:</p>
+                    <ul>
+                        <li>Python</li>
+                        <li>Image anottaion</li>
+                        <li>AI model traning and testing</li>
+                    </ul>
+                </div>
+                <div class="video">
+                    <video controls>
+                        <source src="DustDetection.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div id="Object" class="ObjectProject">
+            <h3>Object Detection Mobile Application</h3>
+            <div class="content">
+                <div class="description">
+                    <p>Another group project involved developing a Flutter application for object detection. This
+                        project extended our previous work, <a href="#Dust">"Dust Detection Using Camera"</a>. It was
+                        particularly interesting because we were introduced to many new technologies. We conducted
+                        extensive research and learned a great deal.</p>
+                    <p>The skills developed:</p>
+                    <ul>
+                        <li>Flutter</li>
+                        <li>Flask</li>
+                        <li>Socket Programming</li>
+                    </ul>
+                </div>
+                <div class="video">
+                    <video controls>
+                        <source src="Object Detection.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div id="TicTacToe" class="TicTacToeProject">
+            <h3>TicTacToe</h3>
+            <div class="content">
+                <div class="description">
+                    <p>A solo project where i developed a classic mobile game TicTacToe. I used Unity for the
+                        development. The game was shared to many and the feedback was provided by them</p>
+                    <p>The skills developed:</p>
+                    <ul>
+                        <li>Unity</li>
+                        <li>C#</li>
+                    </ul>
+                    <p>APK Of The Game : <a
+                            href="https://drive.google.com/drive/folders/1Ei1C1konZVMeHr_9i3Sa86mCYegU9d77">Click
+                            Here</a>
+                        <br><br>Feedback Form :
+                        <a href="https://forms.gle/QEt1v9cyqaiXicLg7">Click Here</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can mail me at <a href="mailto:samratdevsharma@gmail.com">samratdevsharma@gmail.com</a>.</p>
+        <p>Linkedin <a href="https://www.linkedin.com/in/bisheshwardevsharma" target="_blank">bisheshwardevsharma</a>.
+        </p>
+    </section>
+
+    <footer id="footer">
+        <p>&copy; 2024 Bisheshwar Dev Sharma. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
