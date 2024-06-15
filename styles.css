@@ -170,7 +170,7 @@ section video {
     margin-top: 1em; /* Add spacing between text and video */
 }
 
-#about, #projects, #contact {
+#about, #projects, #contact, #games {
     background-color: #f4f4f4;
     margin: 2em 0;
     padding: 2em;
@@ -283,7 +283,7 @@ section video {
     width: 80%; /* Default width for larger screens */
 }
 
-.ArduinoProject, .DustProject, .ObjectProject, .TicTacToeProject {
+.ArduinoProject, .DustProject, .ObjectProject, .TicTacToeProject, .TheSpaceArena{
     margin-bottom: 1em;
     color: white; /* Ensures the text is readable on the background image */
     padding: 2em;
@@ -291,6 +291,10 @@ section video {
     position: relative;
     align-items: center;
     justify-content: center;
+}
+
+.TheSpaceArena {
+    background: url('TheSpaceArenaFrame.png') no-repeat center center/cover;
 }
 
 .ArduinoProject {
