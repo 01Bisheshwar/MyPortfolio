@@ -63,9 +63,10 @@ header nav ul li.dropdown:hover .dropdown-menu {
 }
 
 .hero {
-    background: url('Banner.jfif') no-repeat center center/cover;
+    background: url('Pink-And-Green-Motivation-Quote-LinkedIn-Banner-1-imageonline.co-4168618.jfif') no-repeat center center/cover;
     color: white;
     text-align: center;
+    height: 350px;
     animation: slideInOut 5s infinite;
 }
 
@@ -105,6 +106,10 @@ section {
         padding: 1em; /* Decrease padding for smaller screens */
     }
 
+    .hero {
+        height: 100px;
+        font-size: 50%;
+    }
     /* Make text, image, and video top to bottom */
     .about-content {
         flex-direction: column; /* Stack items vertically */
@@ -200,15 +205,16 @@ section video {
 }
 
 .hero h1, .hero p{
+    color: #000000;
     text-shadow: 
-        -1px -1px 0 black, /* Top-left shadow */
-        1px -1px 0 black, /* Top-right shadow */
-        -1px 1px 0 black, /* Bottom-left shadow */
-        1px 1px 0 black, /* Bottom-right shadow */
-        -2px -2px 0 black, /* Top-left shadow */
-        2px -2px 0 black, /* Top-right shadow */
-        -2px 2px 0 black, /* Bottom-left shadow */
-        2px 2px 0 black; /* Bottom-right shadow */
+        -1px -1px 0 white, /* Top-left shadow */
+        1px -1px 0 white, /* Top-right shadow */
+        -1px 1px 0 white, /* Bottom-left shadow */
+        1px 1px 0 white, /* Bottom-right shadow */
+        -2px -2px 0 white, /* Top-left shadow */
+        2px -2px 0 white, /* Top-right shadow */
+        -2px 2px 0 white, /* Bottom-left shadow */
+        2px 2px 0 white; /* Bottom-right shadow */
 }
 
 .aboutDescription {
